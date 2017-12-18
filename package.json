@@ -1,0 +1,40 @@
+{
+  "name": "hireling-redis",
+  "version": "1.0.0",
+  "description": "Redis database connector for Hireling.",
+  "author": "Alex Soncodi",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc",
+    "package": "npm run clean && npm run build && ./package.sh"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "~8.5.1",
+    "typescript": "~2.6.2"
+  },
+  "peerDependencies": {
+    "hireling": "^1"
+  },
+  "keywords": [
+    "redis",
+    "database",
+    "store",
+    "driver",
+    "adapter",
+    "connector",
+    "hireling"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hireling/hireling-redis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hireling/hireling-redis/issues"
+  },
+  "homepage": "https://github.com/Hireling/hireling-redis#readme"
+}
